@@ -24,7 +24,9 @@ export const HUD = {
             facing: 'down', // Front facing
             aimAngle: Math.PI / 2, // Gun down (Default position)
             isMoving: false, // Static pose (idle anim still runs in drawCharacter)
-            hitAnim: null
+            hitAnim: null,
+            username: null,   // Hide name tag in HUD portrait
+            canTalk: false    // Hide interaction indicator in HUD portrait
         };
 
         // Center in 70x70 canvas
