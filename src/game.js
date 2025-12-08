@@ -339,7 +339,7 @@ function gameLoop(timestamp) {
     };
 
     renderer.render(state, state.myId, state.time);
-    HUD.render(localPlayer);
+    HUD.render(state.players[state.myId]);
 
     animationFrame = requestAnimationFrame(gameLoop);
 }

@@ -130,8 +130,9 @@ export function drawCharacter(ctx, entity, x, y, size, isNpc, isShadow = false) 
         hue = 200; // Blueish for NPC
     } else {
         // Simple hash for color consistency
+        const idStr = entity.id || 'player_default';
         let hash = 0;
-        for (let i = 0; i < entity.id.length; i++) hash = entity.id.charCodeAt(i) + ((hash << 5) - hash);
+        for (let i = 0; i < idStr.length; i++) hash = idStr.charCodeAt(i) + ((hash << 5) - hash);
         hue = Math.abs(hash) % 360;
     }
 
