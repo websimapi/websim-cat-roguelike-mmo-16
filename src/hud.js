@@ -29,9 +29,9 @@ export const HUD = {
 
         // Center in 70x70 canvas
         // Scale 50px size
-        const pSize = 50;
+        const pSize = 45; // ~10% smaller
         const pX = (this.portraitCanvas.width - pSize) / 2;
-        const pY = (this.portraitCanvas.height - pSize) / 2;
+        const pY = (this.portraitCanvas.height - pSize) / 2 + 4; // move character slightly down
 
         drawCharacter(pCtx, portraitPlayer, pX, pY, pSize, false, false);
 
